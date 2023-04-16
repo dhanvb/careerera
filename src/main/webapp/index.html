@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+
+function check() {
+	var a=prompt("Enter your values");
+	var b=prompt("Enter your values");
+	alert(a+b);
+	document.writeln(a+b);
+	var c=Number(a);
+	var d=Number(b);
+	alert(c+d);
+	document.writeln(c+d);
+}
+
+function add() {
+	var a =document.getElementById("text1").value;
+	var b =document.getElementById("text2").value;
+	var c=Number(a);
+	var d=Number(b);
+	alert(c+d);
+}
+
+function sub() {
+	var a =document.getElementById("text1").value;
+	var b =document.getElementById("text2").value;
+	var c=Number(a);
+	var d=Number(b);
+	alert(c-d);
+}
+
+function mul() {
+	var a =document.getElementById("text1").value;
+	var b =document.getElementById("text2").value;
+	var c=Number(a);
+	var d=Number(b);
+	alert(c*d);
+}
+
+function div() {
+	var a =document.getElementById("text1").value;
+	var b =document.getElementById("text2").value;
+	var c=Number(a);
+	var d=Number(b);
+	alert(c/d);
+}
+</script>
+<meta charset="ISO-8859-1">
+<title>My First Web App</title>
+</head>
+<body>
+	<p>Hello from Body Section</p>
+
+<form>
+<input type="text" id="text1" name="text1">
+<input type="text" id="text2" name="text2">
+<button onclick="add">Add</button>
+<button onclick="sub">Sub</button>
+<button onclick="mul">Mul</button>
+<button onclick="div">Div</button>
+
+<input type="button" value="CallAdd" onclick="check()">
+</form>
+</body>
+</html>
